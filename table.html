@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Тестовое задание</title>
+</head>
+<body>
+<div class="search-container">
+    <div class="search-wrapper">
+        <input type="text" id="searchInput" placeholder="Введите текст...">
+        <div class="select-search">
+            <select name="column" id="column-select">
+                <option value="all">По всей таблице</option>
+                <option value="Имя">По первому столбцу</option>
+                <option value="Дата рождения">По второму столбцу</option>
+                <option value="Адрес">По третьему столбцу</option>
+                <option value="Телефон">По четвертому столбцу</option>
+                <option value="Email">По пятому столбцу</option>
+            </select>
+            <button id="searchButton">Поиск</button>
+        </div>
+    </div>
+    <span id="resultCount"></span>
+    <div class="edit-buttons">
+        <button id="editButton">Редактировать</button>
+        <button id="saveButton">Сохранить</button>
+    </div>
+</div>
+<div class="table-container">
+    <div class="table-row header">
+        <div class="table-cell header-cell" data-column="Имя">Имя</div>
+        <div class="table-cell header-cell" data-column="Дата рождения">Дата рождения</div>
+        <div class="table-cell header-cell" data-column="Адрес">Адрес</div>
+        <div class="table-cell header-cell" data-column="Телефон">Телефон</div>
+        <div class="table-cell header-cell" data-column="Email">Email</div>
+    </div>
+    <div class="table-row">
+        <div class="table-cell" data-column="Имя">Анна</div>
+        <div class="table-cell" data-column="Дата рождения">12.07.1989</div>
+        <div class="table-cell" data-column="Адрес">Москва, ул. Чаплыгина 16</div>
+        <div class="table-cell" data-column="Телефон">+79527853523</div>
+        <div class="table-cell" data-column="Email">annamail@mail.ru</div>
+    </div>
+    <div class="table-row">
+        <div class="table-cell" data-column="Имя">Владимир</div>
+        <div class="table-cell" data-column="Дата рождения">27.04.1986</div>
+        <div class="table-cell" data-column="Адрес">Казань, ул. Маяковского 27</div>
+        <div class="table-cell" data-column="Телефон">+79831437964</div>
+        <div class="table-cell" data-column="Email">vlad131@gmail.com</div>
+    </div>
+    <div class="table-row">
+        <div class="table-cell" data-column="Имя">Игорь</div>
+        <div class="table-cell" data-column="Дата рождения">03.12.1991</div>
+        <div class="table-cell" data-column="Адрес">Екатеринбург, просп. Ленина 54а</div>
+        <div class="table-cell" data-column="Телефон">+79214783642</div>
+        <div class="table-cell" data-column="Email">1g0r@gmail.com</div>
+    </div>
+    <div class="table-row">
+        <div class="table-cell" data-column="Имя">Алексей</div>
+        <div class="table-cell" data-column="Дата рождения">18.06.1987</div>
+        <div class="table-cell" data-column="Адрес">Новосибирск, ул. Немировича-Данченко 120</div>
+        <div class="table-cell" data-column="Телефон">+78005553535</div>
+        <div class="table-cell" data-column="Email">alex@mail.ru</div>
+    </div>
+</div>
+<script src="search.js"></script>
+</body>
+</html>
